@@ -70,7 +70,7 @@ This project answers the following questions:
 
 ## Dashboard Preview
 
-![Dashboard](Images/Superstore_dashboard(Excel).png)
+![Dashboard](Images/dashboard.png)
 
 ---
 
