@@ -1,0 +1,49 @@
+/*====================================================
+step 1
+create table
+====================================================*/
+
+drop table if exists superstore;
+
+create table superstore
+(
+    row_id int,
+    order_id varchar(30),
+    order_date text,
+    ship_date text,
+    ship_mode varchar(50),
+    customer_id varchar(30),
+    customer_name varchar(100),
+    segment varchar(50),
+    country varchar(50),
+    city varchar(100),
+    state varchar(100),
+    postal_code varchar(20),
+    region varchar(50),
+    product_id varchar(30),
+    category varchar(50),
+    sub_category varchar(50),
+    product_name varchar(255),
+    sales numeric(10,2)
+);
+
+/*====================================================
+step 2
+import data
+
+import train.csv into table superstore
+
+====================================================*/
+
+/*====================================================
+step 3
+convert text to date
+====================================================*/
+
+alter table superstore
+alter column order_date type date
+using to_date(order_date, 'dd/mm/yyyy');
+
+alter table superstore
+alter column ship_date type date
+using to_date(ship_date, 'dd/mm/yyyy');
