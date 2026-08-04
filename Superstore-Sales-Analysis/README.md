@@ -100,7 +100,7 @@ Superstore-Sales-Analysis/
 │   └── Superstore_Dashboard.xlsx
 │
 ├── Images/
-│   └── Superstore_dashboard(Excel).png
+│   └── dashboard.png
 │
 └── README.md
 ```
